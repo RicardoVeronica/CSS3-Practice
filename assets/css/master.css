@@ -1,1 +1,87 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
 
+body, html {
+    text-align: center;
+    font-size: 32px;  /* 1 rem 32px */
+    background: #1C5F81;
+    color: #EEE;
+}
+
+article {
+    margin: .25em auto;  /* 1em 32px porque el padre es el html */
+    width: 80%;
+}
+
+#bordes {
+    border-radius: 1em 0 2em 4em;
+    background: black;
+}
+
+#rgba {
+   /* hexadecimal */
+   background: #F60; 
+   /* Red, green, blue, opacidad */
+   background: rgba(255, 102, 0, .7);
+}
+
+@font-face{
+    font-family: "LovingYou";
+    src: url("../fonts/LovingYou.eot"); /* IE9 */
+    src: url("../fonts/LovingYou.eot#?iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("../fonts/LovingYou.ttf") format("truetype"), /* safari, android, ios*/
+         url("../fonts/LovingYou.svg#LovingYou") format("svg"), /* legacy ios */
+         url("../fonts/LovingYou.woff") format("woff"), /* modern browsers */
+         url("../fonts/LovingYou.woff2") format("woff2"); /1* super modern browsers *1/
+}
+
+#fuentes {
+    font-family: "LovingYou";
+    font-size: 2.5em;
+}
+
+
+#fuentes-google {
+    font-family: 'Metal Mania';
+}
+
+#fuentes-unidades {  /* padre de los 2 p siguientes */
+    font-size: 64px;  /* 1 em 64px 1 rem 32px */  
+}
+
+#fuentes-unidades>p:first-child {  /* primer hijo respeta la medida del padre */
+    font-size: 1em;
+}
+
+#fuentes-unidades>p:last-child {  /* segundo hijo respeta la medida del html */
+    font-size: 1rem;
+}
+
+#sombras {
+    text-shadow: 1em -0.5em .3em rgba(0, 0, 0, .5);  /* X Y blur color */
+    box-shadow: .3em .3em .25em rgba(0, 0, 0, .75) inset;  /* pordefault outset */
+}
+
+/* colorzilla/gradient-editor */
+.gradientes {
+    height: 300px;
+}
+
+#lineal {
+background: #3b679e; /* Old browsers */
+background: -moz-linear-gradient(top,  #3b679e 7%, #207cca 27%, #2b88d9 39%, #2b88d9 52%, #207cca 65%, #7db9e8 84%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #3b679e 7%,#207cca 27%,#2b88d9 39%,#2b88d9 52%,#207cca 65%,#7db9e8 84%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #3b679e 7%,#207cca 27%,#2b88d9 39%,#2b88d9 52%,#207cca 65%,#7db9e8 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+#radial {
+background: #f85032; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #f85032 0%, #f85032 12%, #f85032 22%, #f16f5c 32%, #f16f5c 42%, #f85032 49%, #f16f5c 58%, #f16f5c 68%, #f6290c 79%, #f6290c 88%, #f02f17 93%, #e73827 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #f85032 0%,#f85032 12%,#f85032 22%,#f16f5c 32%,#f16f5c 42%,#f85032 49%,#f16f5c 58%,#f16f5c 68%,#f6290c 79%,#f6290c 88%,#f02f17 93%,#e73827 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #f85032 0%,#f85032 12%,#f85032 22%,#f16f5c 32%,#f16f5c 42%,#f85032 49%,#f16f5c 58%,#f16f5c 68%,#f6290c 79%,#f6290c 88%,#f02f17 93%,#e73827 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
