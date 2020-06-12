@@ -85,3 +85,99 @@ background: -webkit-radial-gradient(center, ellipse cover,  #f85032 0%,#f85032 1
 background: radial-gradient(ellipse at center,  #f85032 0%,#f85032 12%,#f85032 22%,#f16f5c 32%,#f16f5c 42%,#f85032 49%,#f16f5c 58%,#f16f5c 68%,#f6290c 79%,#f6290c 88%,#f02f17 93%,#e73827 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+#ajuste-texto {
+    background-color: #333;
+    margin: auto;
+    width: 100px;
+    word-wrap: break-word; /* rompe la palabra para que quepa en la caja */
+}
+
+#texto-columnas {
+    column-count: 3; /* dividir en 3 columnas */
+    column-gap: 0.5em; /* espacio entre columnas */
+    column-rule: thin solid white; /* linea de separacion */
+}
+
+.dimension-caja {
+    background-color: #999;
+    margin: .5em auto;
+    width: 50%;
+    padding: 1em; /* aumenta en cada lado en el exterior */
+}
+
+.dieta {
+    box-sizing: border-box; /* mantiene las mismas dimansiones exteriores */
+}
+
+ul {
+    list-style-position: inside;
+    text-align: left;
+}
+
+#fondo-area {
+    background-color: #292623;
+    border: medium dashed #EC673A;
+    padding: 1em;
+    /* color de fondo desde: */
+    background-clip: border-box; /* por defecto */
+    background-clip: padding-box;
+    background-clip: content-box;
+}
+
+.transformaciones p { /* selctor descendente todos los p de .transformaciones */
+    background-color: #999; 
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+}
+
+#traslacion {
+    transform: translate(-40px, 15px);
+}
+
+#rotacion {
+    transform: rotate(45deg)
+}
+
+#escala {
+    transform: scale(.5, 2)
+}
+
+#sesgo {
+    transform: skew(20deg, 0);
+}
+
+#todas {
+    transform: rotate(-220deg) scale(.5, 5) skew(30deg, 20deg) translate(-50px, 30px);
+}
+
+.cambio { /* sin esto no existen transiciones ni trasformaciones */
+    transition: all 2s ease-out;
+}
+
+#transiciones {
+    background-color: skyblue;
+    margin-top: 3em;
+    transition: background-color 2.5s ease-out,
+                color 2s ease-in,
+                border-radius 1.5s;
+}
+
+#transiciones:hover {
+    background-color: #999;
+    border-radius: .5em;
+    color: #000;
+}
+
+#x:hover {
+    transform: rotateX(360deg);    
+}
+
+#y:hover {
+    transform: rotateY(360deg);    
+}
+
+#z:hover {
+    transform: rotateZ(360deg);
+}
