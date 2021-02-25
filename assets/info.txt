@@ -1,2 +1,2 @@
 La tipografia .ttf es para instalarla en el SO
-Y como es fuente no segura, refiriendose a que los SO no la tienen por defecto
+Y como es fuente no segura, refiriendose a que los SO no la tienen por defecto.
