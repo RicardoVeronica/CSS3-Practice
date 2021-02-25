@@ -35,7 +35,7 @@ article {
          url("../fonts/LovingYou.ttf") format("truetype"), /* safari, android, ios*/
          url("../fonts/LovingYou.svg#LovingYou") format("svg"), /* legacy ios */
          url("../fonts/LovingYou.woff") format("woff"), /* modern browsers */
-         url("../fonts/LovingYou.woff2") format("woff2"); /1* super modern browsers *1/
+         url("../fonts/LovingYou.woff2") format("woff2"); /* super modern browsers */
 }
 
 #fuentes {
